@@ -1,320 +1,292 @@
 {
-  "adminLayerInfo" : {
-    "tableName" : "db_68798.user_68798.JOIN_FEATURES_TO_COTAK_WHOLE_BLOOD_PLI_VIEW_JOIN_FEATURES_TO_COTAK_WHOLE_BLOOD_PLI_VIEW", 
-    "geometryField" : {"name" : "Shape"}, 
-    "xssTrustedFields" : "", 
-    "viewLayerDefinition" : {
-      "table" : 
-      {
-        "name" : "COTAK Whole Blood PLI_1764088386204_target", 
-        "sourceServiceName" : "COTAK Whole Blood PLI", 
-        "sourceLayerId" : 0, 
-        "sourceId" : 222, 
-        "sourceLayerFields" : [
-          {
-            "name" : "cotuid", 
-            "alias" : "cotuid1", 
-            "source" : "cotuid"
-          }, 
-          {
-            "name" : "remarks", 
-            "alias" : "remarks", 
-            "source" : "remarks"
-          }, 
-          {
-            "name" : "callsign", 
-            "alias" : "callsign", 
-            "source" : "callsign"
-          }, 
-          {
-            "name" : "type", 
-            "alias" : "type", 
-            "source" : "type"
-          }, 
-          {
-            "name" : "how", 
-            "alias" : "how", 
-            "source" : "how"
-          }, 
-          {
-            "name" : "time", 
-            "alias" : "time", 
-            "source" : "time"
-          }, 
-          {
-            "name" : "start", 
-            "alias" : "start", 
-            "source" : "start"
-          }, 
-          {
-            "name" : "stale", 
-            "alias" : "stale", 
-            "source" : "stale"
-          }
-        ], 
-        "relatedTables" : [
-          {
-            "name" : "service_b183607a60664a209f2f1336f18e7648_1764088386204_join", 
-            "sourceServiceName" : "service_b183607a60664a209f2f1336f18e7648", 
-            "sourceLayerId" : 0, 
-            "sourceId" : 304, 
-            "topFilter" : {
-              "orderByFields" : "CreationDate DESC", 
-              "groupByFields" : "EUD", 
-              "topCount" : 1
-            }, 
-            "sourceLayerFields" : [
-              {
-                "name" : "globalid", 
-                "alias" : "GlobalID", 
-                "source" : "globalid"
-              }, 
-              {
-                "name" : "Action", 
-                "alias" : "Action", 
-                "source" : "Action"
-              }, 
-              {
-                "name" : "ReportTransfer", 
-                "alias" : "Report_Transfer", 
-                "source" : "ReportTransfer"
-              }, 
-              {
-                "name" : "EntryDate", 
-                "alias" : "Entry Date", 
-                "source" : "EntryDate"
-              }, 
-              {
-                "name" : "UserName", 
-                "alias" : "Select Your Name", 
-                "source" : "UserName"
-              }, 
-              {
-                "name" : "Callsign_1764088386204", 
-                "alias" : "Select Your Callsign", 
-                "source" : "Callsign"
-              }, 
-              {
-                "name" : "EUD", 
-                "alias" : "EUD", 
-                "source" : "EUD"
-              }, 
-              {
-                "name" : "ShiftOwnerPhone", 
-                "alias" : "Shift Owner Phone Number", 
-                "source" : "ShiftOwnerPhone"
-              }, 
-              {
-                "name" : "Agency", 
-                "alias" : "Agency/Facility", 
-                "source" : "Agency"
-              }, 
-              {
-                "name" : "WBUN_Barcode", 
-                "alias" : "Scan a Whole Blood Unit Number Barcode", 
-                "source" : "WBUN_Barcode"
-              }, 
-              {
-                "name" : "WholeBloodUnitNumber", 
-                "alias" : "Whole Blood Unit Number Code", 
-                "source" : "WholeBloodUnitNumber"
-              }, 
-              {
-                "name" : "WBUN_Note", 
-                "alias" : "Incorrect barcode. Please scan the Whole Blood Unit Number (15 characters).", 
-                "source" : "WBUN_Note"
-              }, 
-              {
-                "name" : "WBPC_Barcode", 
-                "alias" : "Scan a Whole Blood Product Code Barcode", 
-                "source" : "WBPC_Barcode"
-              }, 
-              {
-                "name" : "WholeBloodProductCode", 
-                "alias" : "Whole Blood Product Code", 
-                "source" : "WholeBloodProductCode"
-              }, 
-              {
-                "name" : "WBPC_Note", 
-                "alias" : "Incorrect barcode. Please scan the Whole Blood Product Code (8 characters).", 
-                "source" : "WBPC_Note"
-              }, 
-              {
-                "name" : "BT_Barcode", 
-                "alias" : "Scan a Blood Type Barcode", 
-                "source" : "BT_Barcode"
-              }, 
-              {
-                "name" : "BloodType", 
-                "alias" : "Blood Type Code", 
-                "source" : "BloodType"
-              }, 
-              {
-                "name" : "BT_Note", 
-                "alias" : "Incorrect barcode. Please scan the Blood Type (4 characters).", 
-                "source" : "BT_Note"
-              }, 
-              {
-                "name" : "ED_Barcode", 
-                "alias" : "Scan an Expiration Date Barcode", 
-                "source" : "ED_Barcode"
-              }, 
-              {
-                "name" : "ED_BarcodeClean", 
-                "alias" : "Expiration Date Code", 
-                "source" : "ED_BarcodeClean"
-              }, 
-              {
-                "name" : "ExpirationDate", 
-                "alias" : "Expiration Date", 
-                "source" : "ExpirationDate"
-              }, 
-              {
-                "name" : "ED_Note", 
-                "alias" : "Incorrect barcode. Please scan the Expiration Date (10 characters).", 
-                "source" : "ED_Note"
-              }, 
-              {
-                "name" : "CoolerNumber", 
-                "alias" : "Cooler #", 
-                "source" : "CoolerNumber"
-              }, 
-              {
-                "name" : "VisualCheck", 
-                "alias" : "Visual Check", 
-                "source" : "VisualCheck"
-              }, 
-              {
-                "name" : "CoolerBloodBags", 
-                "alias" : "How many total blood bags (including this one) in this cooler?", 
-                "source" : "CoolerBloodBags"
-              }, 
-              {
-                "name" : "CurrentTemp", 
-                "alias" : "Current Temp (Celsius)", 
-                "source" : "CurrentTemp"
-              }, 
-              {
-                "name" : "TempStickNumber", 
-                "alias" : "Temp Stick #", 
-                "source" : "TempStickNumber"
-              }, 
-              {
-                "name" : "SafeTVueColor", 
-                "alias" : "Safe-T-Vue Sticker Color", 
-                "source" : "SafeTVueColor"
-              }, 
-              {
-                "name" : "RotationDate", 
-                "alias" : "Rotation Date", 
-                "source" : "RotationDate"
-              }, 
-              {
-                "name" : "RotationDateFormatted", 
-                "alias" : "RotationDateFormatted", 
-                "source" : "RotationDateFormatted"
-              }, 
-              {
-                "name" : "OriginalHolderUserName", 
-                "alias" : "Select the Original Holder's Name", 
-                "source" : "OriginalHolderUserName"
-              }, 
-              {
-                "name" : "OriginalHolderCallsign", 
-                "alias" : "Select the Original Holder's Callsign", 
-                "source" : "OriginalHolderCallsign"
-              }, 
-              {
-                "name" : "OriginalHolderEUD", 
-                "alias" : "OriginalHolderEUD", 
-                "source" : "OriginalHolderEUD"
-              }, 
-              {
-                "name" : "CurrentStatus", 
-                "alias" : "Current Status", 
-                "source" : "CurrentStatus"
-              }, 
-              {
-                "name" : "CreationDate", 
-                "alias" : "CreationDate", 
-                "source" : "CreationDate"
-              }, 
-              {
-                "name" : "Creator", 
-                "alias" : "Creator", 
-                "source" : "Creator"
-              }, 
-              {
-                "name" : "EditDate", 
-                "alias" : "EditDate", 
-                "source" : "EditDate"
-              }, 
-              {
-                "name" : "Editor", 
-                "alias" : "Editor", 
-                "source" : "Editor"
-              }
-            ], 
-            "type" : "INNER", 
-            "parentKeyFields" : ["cotuid"], 
-            "keyFields" : ["EUD"], 
-            "operator" : "EQUALS"
-          },
-          {
-          "name" : "transferrepeat_join", 
-          "sourceServiceName" : "service_b183607a60664a209f2f1336f18e7648", 
-          "sourceLayerId" : 1, 
-          "sourceId" : 305, 
-          "topFilter" : {
-            "orderByFields" : "CreationDate DESC", 
-            "groupByFields" : "EUD", 
-            "topCount" : 1
-          }, 
-          "sourceLayerFields" : [
-              {
-                "name" : "globalid", 
-                "alias" : "GlobalID", 
-                "source" : "globalid"
-              }, 
-              {
-                "name" : "Action", 
-                "alias" : "Action", 
-                "source" : "Action"
-              }, 
-              {
-                "name" : "Callsign2", 
-                "alias" : "Select Your Callsign", 
-                "source" : "Callsign"
-              }, 
-              {
-                "name" : "EUD", 
-                "alias" : "EUD", 
-                "source" : "EUD"
-              }, 
-              {
-                "name" : "CoolerNumberRepeat", 
-                "alias" : "Cooler #", 
-                "source" : "CoolerNumberRepeat"
-              }, 
-              {
-                "name" : "CoolerBloodBagsRepeat", 
-                "alias" : "How many total blood bags (including this one) in this cooler?", 
-                "source" : "CoolerBloodBagsRepeat"
-              }, 
-              {
-                "name" : "Editor", 
-                "alias" : "Editor", 
-                "source" : "Editor"
-              }
-            ], 
-            "type" : "INNER", 
-            "parentKeyFields" : ["cotuid"], 
-            "keyFields" : ["EUD"], 
-            "operator" : "EQUALS"
-          },
-      ], 
-        "materialized" : false
-      }
-    }
-  }
+     "layers": [
+        {
+            "name": "ADVANCED JOIN VIEW",
+            "displayField": "",
+            "description": "AttributeJoin",
+            "adminLayerInfo": {
+                "tableName": "ADVANCED JOIN VIEW",
+                "geometryFieldName": "myTableName.shape",
+                "viewLayerDefinition": {
+                    "table": {
+                        "name" : "COTAK Whole Blood PLI_1764168496459_target", 
+                        "sourceServiceName" : "COTAK Whole Blood PLI", 
+                        "sourceLayerId" : 0, 
+                        "sourceId" : 222, 
+                        "sourceLayerFields" : [
+                        {
+                            "name" : "cotuid", 
+                            "alias" : "cotuid1", 
+                            "source" : "cotuid"
+                        }, 
+                        {
+                            "name" : "remarks", 
+                            "alias" : "remarks", 
+                            "source" : "remarks"
+                        }, 
+                        {
+                            "name" : "callsign", 
+                            "alias" : "callsign", 
+                            "source" : "callsign"
+                        }, 
+                        {
+                            "name" : "type", 
+                            "alias" : "type", 
+                            "source" : "type"
+                        }, 
+                        {
+                            "name" : "how", 
+                            "alias" : "how", 
+                            "source" : "how"
+                        }, 
+                        {
+                            "name" : "time", 
+                            "alias" : "time", 
+                            "source" : "time"
+                        }, 
+                        {
+                            "name" : "start", 
+                            "alias" : "start", 
+                            "source" : "start"
+                        }, 
+                        {
+                            "name" : "stale", 
+                            "alias" : "stale", 
+                            "source" : "stale"
+                        }
+                        ], 
+                        "relatedTables" : [
+                        {
+                            "name" : "Survey_Copy_Joined", 
+                            "sourceServiceName" : "Survey_Copy_Joined", 
+                            "sourceLayerId" : 0, 
+                            "sourceId" : 0, 
+                            "topFilter" : {
+                            "orderByFields" : "CreationDate DESC", 
+                            "groupByFields" : "EUD", 
+                            "topCount" : 1
+                            }, 
+                            "sourceLayerFields" : [
+                            {
+                                "name" : "globalid", 
+                                "alias" : "GlobalID", 
+                                "source" : "globalid"
+                            }, 
+                            {
+                                "name" : "Action", 
+                                "alias" : "Action", 
+                                "source" : "Action"
+                            }, 
+                            {
+                                "name" : "ReportTransfer", 
+                                "alias" : "Report_Transfer", 
+                                "source" : "ReportTransfer"
+                            }, 
+                            {
+                                "name" : "EntryDate", 
+                                "alias" : "Entry Date", 
+                                "source" : "EntryDate"
+                            }, 
+                            {
+                                "name" : "UserName", 
+                                "alias" : "Select Your Name", 
+                                "source" : "UserName"
+                            }, 
+                            {
+                                "name" : "Callsign_1764088386204", 
+                                "alias" : "Select Your Callsign", 
+                                "source" : "Callsign"
+                            }, 
+                            {
+                                "name" : "EUD", 
+                                "alias" : "EUD", 
+                                "source" : "EUD"
+                            }, 
+                            {
+                                "name" : "ShiftOwnerPhone", 
+                                "alias" : "Shift Owner Phone Number", 
+                                "source" : "ShiftOwnerPhone"
+                            }, 
+                            {
+                                "name" : "Agency", 
+                                "alias" : "Agency/Facility", 
+                                "source" : "Agency"
+                            }, 
+                            {
+                                "name" : "WBUN_Barcode", 
+                                "alias" : "Scan a Whole Blood Unit Number Barcode", 
+                                "source" : "WBUN_Barcode"
+                            }, 
+                            {
+                                "name" : "WholeBloodUnitNumber", 
+                                "alias" : "Whole Blood Unit Number Code", 
+                                "source" : "WholeBloodUnitNumber"
+                            }, 
+                            {
+                                "name" : "WBUN_Note", 
+                                "alias" : "Incorrect barcode. Please scan the Whole Blood Unit Number (15 characters).", 
+                                "source" : "WBUN_Note"
+                            }, 
+                            {
+                                "name" : "WBPC_Barcode", 
+                                "alias" : "Scan a Whole Blood Product Code Barcode", 
+                                "source" : "WBPC_Barcode"
+                            }, 
+                            {
+                                "name" : "WholeBloodProductCode", 
+                                "alias" : "Whole Blood Product Code", 
+                                "source" : "WholeBloodProductCode"
+                            }, 
+                            {
+                                "name" : "WBPC_Note", 
+                                "alias" : "Incorrect barcode. Please scan the Whole Blood Product Code (8 characters).", 
+                                "source" : "WBPC_Note"
+                            }, 
+                            {
+                                "name" : "BT_Barcode", 
+                                "alias" : "Scan a Blood Type Barcode", 
+                                "source" : "BT_Barcode"
+                            }, 
+                            {
+                                "name" : "BloodType", 
+                                "alias" : "Blood Type Code", 
+                                "source" : "BloodType"
+                            }, 
+                            {
+                                "name" : "BT_Note", 
+                                "alias" : "Incorrect barcode. Please scan the Blood Type (4 characters).", 
+                                "source" : "BT_Note"
+                            }, 
+                            {
+                                "name" : "ED_Barcode", 
+                                "alias" : "Scan an Expiration Date Barcode", 
+                                "source" : "ED_Barcode"
+                            }, 
+                            {
+                                "name" : "ED_BarcodeClean", 
+                                "alias" : "Expiration Date Code", 
+                                "source" : "ED_BarcodeClean"
+                            }, 
+                            {
+                                "name" : "ExpirationDate", 
+                                "alias" : "Expiration Date", 
+                                "source" : "ExpirationDate"
+                            }, 
+                            {
+                                "name" : "ED_Note", 
+                                "alias" : "Incorrect barcode. Please scan the Expiration Date (10 characters).", 
+                                "source" : "ED_Note"
+                            }, 
+                            {
+                                "name" : "CoolerNumber", 
+                                "alias" : "Cooler #", 
+                                "source" : "CoolerNumber"
+                            }, 
+                            {
+                                "name" : "VisualCheck", 
+                                "alias" : "Visual Check", 
+                                "source" : "VisualCheck"
+                            }, 
+                            {
+                                "name" : "CoolerBloodBags", 
+                                "alias" : "How many total blood bags (including this one) in this cooler?", 
+                                "source" : "CoolerBloodBags"
+                            }, 
+                            {
+                                "name" : "CurrentTemp", 
+                                "alias" : "Current Temp (Celsius)", 
+                                "source" : "CurrentTemp"
+                            }, 
+                            {
+                                "name" : "TempStickNumber", 
+                                "alias" : "Temp Stick #", 
+                                "source" : "TempStickNumber"
+                            }, 
+                            {
+                                "name" : "SafeTVueColor", 
+                                "alias" : "Safe-T-Vue Sticker Color", 
+                                "source" : "SafeTVueColor"
+                            }, 
+                            {
+                                "name" : "RotationDate", 
+                                "alias" : "Rotation Date", 
+                                "source" : "RotationDate"
+                            }, 
+                            {
+                                "name" : "RotationDateFormatted", 
+                                "alias" : "RotationDateFormatted", 
+                                "source" : "RotationDateFormatted"
+                            }, 
+                            {
+                                "name" : "OriginalHolderUserName", 
+                                "alias" : "Select the Original Holder's Name", 
+                                "source" : "OriginalHolderUserName"
+                            }, 
+                            {
+                                "name" : "OriginalHolderCallsign", 
+                                "alias" : "Select the Original Holder's Callsign", 
+                                "source" : "OriginalHolderCallsign"
+                            }, 
+                            {
+                                "name" : "OriginalHolderEUD", 
+                                "alias" : "OriginalHolderEUD", 
+                                "source" : "OriginalHolderEUD"
+                            }, 
+                            {
+                                "name" : "CurrentStatus", 
+                                "alias" : "Current Status", 
+                                "source" : "CurrentStatus"
+                            }, 
+                            {
+                                "name" : "CreationDate", 
+                                "alias" : "CreationDate", 
+                                "source" : "CreationDate"
+                            }, 
+                            {
+                                "name" : "Creator", 
+                                "alias" : "Creator", 
+                                "source" : "Creator"
+                            }, 
+                            {
+                                "name" : "EditDate", 
+                                "alias" : "EditDate", 
+                                "source" : "EditDate"
+                            }, 
+                            {
+                                "name" : "Editor", 
+                                "alias" : "Editor", 
+                                "source" : "Editor"
+                            },
+                            {
+                                "name" : "Callsign2", 
+                                "alias" : "Select Your Callsign", 
+                                "source" : "Callsign"
+                            }, 
+                            {
+                                "name" : "EUD", 
+                                "alias" : "EUD", 
+                                "source" : "EUD"
+                            }, 
+                            {
+                                "name" : "UnassociatePhone", 
+                                "alias" : "Unassociate_Phone", 
+                                "source" : "UnassociatePhone"
+                            }, 
+                            ], 
+                            "type" : "INNER", 
+                            "parentKeyFields" : ["cotuid"], 
+                            "keyFields" : ["EUD"], 
+                            "operator" : "EQUALS"
+                        },
+                        
+                    ], 
+                        "materialized" : false
+                    }
+                },
+                "geometryField": {
+                "name": "COTAK Whole Blood PLI_1764168496459_target.Shape"
+                    }
+            }
+        }
+    ]
 }
